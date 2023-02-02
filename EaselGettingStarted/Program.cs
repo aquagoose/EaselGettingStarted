@@ -1,3 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Easel;
+using EaselGettingStarted;
 
-Console.WriteLine("Hello, World!");
+GameSettings settings = new GameSettings();
+
+using EaselGame game = new EaselGame(settings, new MyScene());
+game.Run();
